@@ -1,0 +1,148 @@
+/* About Page Specific Styles - Refined White/Gray Theme */
+.about-hero {
+  padding: 160px 0 80px;
+  background: var(--background);
+  color: var(--foreground);
+  text-align: center;
+}
+.about-hero h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  margin-bottom: 2rem;
+  letter-spacing: -2px;
+  color: var(--foreground);
+}
+.about-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.pillar-card {
+  background: white;
+  border: none;
+  padding: 4rem 3rem;
+  border-radius: 24px;
+  color: var(--foreground);
+  transition: var(--transition);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+  text-align: center;
+}
+.pillar-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+}
+.pillar-card h3 { 
+  margin-bottom: 1.5rem; 
+  color: var(--foreground); 
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.pillar-card p { 
+  color: var(--text-muted); 
+  font-size: 1.05rem; 
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Quote Section */
+.quote-section {
+  background: var(--secondary);
+  padding: 100px 0;
+}
+.quote-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  padding: 5rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.quote-title {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--foreground);
+}
+.quote-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+.quote-author {
+  color: var(--foreground);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* Mission Vision */
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.vm-card {
+  padding: 4rem;
+  background: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+  transition: var(--transition);
+}
+.vm-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+.vm-card h2 { margin-bottom: 1.5rem; color: var(--foreground); font-size: 1.8rem; }
+.vm-card p { color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; }
+
+/* Offer Section */
+.offer-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.offer-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+.offer-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.offer-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+.offer-item span {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .pillars-grid, .vision-mission-grid, .offer-split { grid-template-columns: 1fr; }
+  .offer-list { grid-template-columns: 1fr; }
+}

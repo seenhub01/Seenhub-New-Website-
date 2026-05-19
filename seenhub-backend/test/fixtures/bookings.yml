@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  booking_id: MyString
+  name: MyString
+  email: MyString
+  phone: MyString
+  booking_type: MyString
+  date: 2026-05-16
+  time_from: MyString
+  time_to: MyString
+  guests: 1
+  space: MyString
+  notes: MyText
+  addons: 
+  printing_bundles: 1
+  category: MyString
+  calculated_end_date: 2026-05-16
+  subtotal: 9.99
+  tax: 9.99
+  total: 9.99
+  discount: 9.99
+  duration_label: MyString
+  space_subtotal: 9.99
+  assigned_unit: MyString
+  status: MyString
+  qr_code: MyString
+  coupon_code: MyString
+  discount_percent: 9.99
+  applied_coupon: MyString
+  total_units: 1
+  user: one
+
+two:
+  booking_id: MyString
+  name: MyString
+  email: MyString
+  phone: MyString
+  booking_type: MyString
+  date: 2026-05-16
+  time_from: MyString
+  time_to: MyString
+  guests: 1
+  space: MyString
+  notes: MyText
+  addons: 
+  printing_bundles: 1
+  category: MyString
+  calculated_end_date: 2026-05-16
+  subtotal: 9.99
+  tax: 9.99
+  total: 9.99
+  discount: 9.99
+  duration_label: MyString
+  space_subtotal: 9.99
+  assigned_unit: MyString
+  status: MyString
+  qr_code: MyString
+  coupon_code: MyString
+  discount_percent: 9.99
+  applied_coupon: MyString
+  total_units: 1
+  user: two

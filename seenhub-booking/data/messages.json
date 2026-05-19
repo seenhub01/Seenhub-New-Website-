@@ -1,0 +1,22 @@
+[
+  {
+    "id": "msg_1778506387558",
+    "firstName": "ibrar ali",
+    "lastName": "khan",
+    "email": "iba@gmail.com",
+    "queryType": "Other",
+    "message": "I need big hall\n",
+    "date": "5/11/2026, 5:33:07 PM",
+    "status": "New"
+  },
+  {
+    "id": "msg_1777984798451",
+    "firstName": "ibar",
+    "lastName": "ali",
+    "email": "ibrarkhan@gmail.com",
+    "queryType": "Issue",
+    "message": "i want to book business center for 5 years",
+    "date": "5/5/2026, 4:39:58 PM",
+    "status": "Read"
+  }
+]

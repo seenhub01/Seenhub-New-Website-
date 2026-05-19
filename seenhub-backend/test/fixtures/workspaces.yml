@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  subtitle: MyString
+  description: MyText
+  featured_img: MyString
+  gallery: 
+  link: MyString
+  max_guests: 1
+  units: 1
+  unit_names: 
+  booking_types: 
+  pricing: 
+  extra_guest_price: 
+  working_hours: 
+  qr_prefix: MyString
+
+two:
+  title: MyString
+  subtitle: MyString
+  description: MyText
+  featured_img: MyString
+  gallery: 
+  link: MyString
+  max_guests: 1
+  units: 1
+  unit_names: 
+  booking_types: 
+  pricing: 
+  extra_guest_price: 
+  working_hours: 
+  qr_prefix: MyString

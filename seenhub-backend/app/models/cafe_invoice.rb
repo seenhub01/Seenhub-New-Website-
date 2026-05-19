@@ -1,0 +1,2 @@
+class CafeInvoice < ApplicationRecord
+end

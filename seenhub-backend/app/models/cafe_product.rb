@@ -1,0 +1,2 @@
+class CafeProduct < ApplicationRecord
+end

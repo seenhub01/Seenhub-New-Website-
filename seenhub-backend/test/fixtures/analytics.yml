@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  path: MyString
+  session_id: MyString
+  referrer: MyString
+  ip: MyString
+  location: MyString
+  timestamp: MyString
+
+two:
+  path: MyString
+  session_id: MyString
+  referrer: MyString
+  ip: MyString
+  location: MyString
+  timestamp: MyString

@@ -1,0 +1,216 @@
+.hero {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background: none;
+}
+.hero-banner {
+  position: relative;
+  background-image: url('/seenhub_modern_workspace_1777453051246.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  padding: 120px 80px;
+  overflow: hidden;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.4) 60%, transparent 100%);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+.hero-title {
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  letter-spacing: -3px;
+  color: #000;
+  font-weight: 800;
+}
+.hero-title span {
+  display: block;
+  font-weight: 400;
+  color: #555;
+  margin-top: 0.5rem;
+}
+.intro-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+.intro-box {
+  padding: 4rem;
+  background: var(--secondary);
+  border-radius: var(--radius-lg);
+}
+.intro-image {
+  height: 100%;
+  min-height: 450px;
+}
+.split-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+.intro-text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--primary-light);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .intro-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .intro-image {
+    min-height: 300px;
+    order: -1; /* Image on top for mobile */
+  }
+}
+
+/* Workspace Slider Styles */
+.workspace-slider-container {
+  margin-top: 4rem;
+}
+.workspace-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  min-height: 320px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid var(--surface-border);
+}
+.workspace-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.workspace-card:hover img {
+  transform: scale(1.05);
+}
+.workspace-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.workspace-overlay h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.workspace-overlay p { font-size: 0.85rem; opacity: 0.8; margin-bottom: 1.5rem; }
+
+.overlay-link {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.workspace-info-card {
+  padding: 2.5rem;
+}
+.workspace-info-card h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+.workspace-info-card p { line-height: 1.6; color: var(--text-muted); margin-bottom: 2rem; }
+
+.text-link {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--foreground);
+}
+
+/* Memberships */
+.memberships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.membership-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.membership-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--secondary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.membership-card h3 { margin-bottom: 1rem; }
+.membership-card p { color: var(--text-muted); margin-bottom: 2rem; flex: 1; line-height: 1.6; }
+
+/* Team CTA */
+.team-cta {
+  background: var(--accent);
+  color: white;
+  padding: 5rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.cta-content h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+.cta-content p { opacity: 0.7; }
+
+.bg-light { background: #fafafa; }
+
+@media (max-width: 1024px) {
+  .team-cta { flex-direction: column; text-align: center; gap: 3rem; padding: 3rem; }
+}
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 60px 30px;
+    border-radius: 24px;
+    min-height: 450px;
+  }
+  .hero-banner::before {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+  }
+  .hero-title { font-size: 3.2rem; margin-bottom: 1.5rem; letter-spacing: -2px; }
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-btns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-btns a {
+    width: 100%;
+    justify-content: center;
+  }
+}

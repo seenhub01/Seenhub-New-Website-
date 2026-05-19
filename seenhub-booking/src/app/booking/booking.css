@@ -1,0 +1,932 @@
+/* Booking Form Styles */
+.booking-form-wrapper {
+          max-width: 650px;
+          margin: 0 auto;
+        }
+
+        .step-indicator {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2.5rem;
+        }
+
+        .step {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background: #f0f0f0;
+          border: 2px solid #ddd;
+          color: #888;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          transition: all 0.3s ease;
+          font-size: 0.9rem;
+        }
+
+        .step.active {
+          background: #2d2d2d;
+          color: white;
+          border-color: #2d2d2d;
+        }
+
+        .step-line {
+          flex: 1;
+          height: 2px;
+          background: #eaeaea;
+          margin: 0 0.5rem;
+        }
+
+        .booking-card {
+          background: white;
+          padding: 3rem;
+          border-radius: 20px;
+          box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        }
+
+        .form-header {
+          margin-bottom: 2rem;
+        }
+
+        .form-header h3 {
+          font-size: 1.8rem;
+          font-weight: 800;
+          color: #2d2d2d;
+          margin-bottom: 0.5rem;
+        }
+
+        .form-header p {
+          color: #888;
+          font-size: 1rem;
+        }
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: #444;
+        }
+
+        .category-toggle {
+          display: flex;
+          background: #f4f4f4;
+          padding: 0.4rem;
+          border-radius: 12px;
+          border: 1px solid #eaeaea;
+        }
+
+        .toggle-btn {
+          flex: 1;
+          padding: 0.8rem;
+          border: none;
+          background: transparent;
+          border-radius: 8px;
+          font-weight: 700;
+          color: #888;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 0.95rem;
+        }
+
+        .toggle-btn.active {
+          background: white;
+          color: #2d2d2d;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .type-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 0.5rem;
+        }
+
+        .type-btn {
+          padding: 0.8rem 0.5rem;
+          border: 1px solid #ddd;
+          background: #fbfbfb;
+          border-radius: 10px;
+          font-weight: 600;
+          color: #666;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          font-size: 0.85rem;
+        }
+
+        .type-btn:hover {
+          border-color: #aaa;
+        }
+
+        .type-btn.active {
+          background: #2d2d2d;
+          color: white;
+          border-color: #2d2d2d;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        input:not([type="checkbox"]), textarea {
+          padding: 1rem;
+          border-radius: 12px;
+          border: 1px solid #ddd;
+          background: #fbfbfb;
+          font-size: 1rem;
+          color: #2d2d2d;
+          transition: all 0.3s ease;
+          width: 100%;
+        }
+
+        input:focus, textarea:focus {
+          outline: none;
+          border-color: #2d2d2d;
+          background: white;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        .custom-date-wrapper {
+          position: relative;
+          width: 100%;
+        }
+
+        .custom-date-display {
+          padding: 1rem;
+          border-radius: 12px;
+          border: 1px solid #ddd;
+          background: #fbfbfb;
+          font-size: 1rem;
+          color: #888;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.3s ease;
+        }
+
+        .custom-date-display.has-value {
+          color: #2d2d2d;
+          font-weight: 500;
+        }
+
+        .hidden-date-input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .hidden-date-input:focus + .custom-date-display,
+        .custom-date-wrapper:hover .custom-date-display {
+          border-color: #2d2d2d;
+          background: white;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        /* --- React DatePicker Modern Styling --- */
+        .modern-datepicker-wrapper .react-datepicker-wrapper {
+          width: 100%;
+        }
+
+        .modern-date-input {
+          width: 100%;
+          padding: 1rem;
+          border-radius: 12px;
+          border: 1px solid #ddd;
+          background: #fbfbfb;
+          font-size: 1rem;
+          color: #2d2d2d;
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .modern-date-input:focus,
+        .modern-datepicker-wrapper:hover .modern-date-input {
+          border-color: #2d2d2d;
+          background: white;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+          outline: none;
+        }
+
+        .calendar-icon-overlay {
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none; /* Allows clicking through the icon to open calendar */
+        }
+
+        /* Override default react-datepicker styles for a modern look */
+        .modern-calendar {
+          font-family: 'Inter', sans-serif !important;
+          border: 1px solid #eee !important;
+          border-radius: 16px !important;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+          padding: 0.5rem !important;
+        }
+
+        .react-datepicker__header {
+          background: transparent !important;
+          border-bottom: none !important;
+          padding-top: 1rem !important;
+        }
+
+        .react-datepicker__current-month {
+          font-family: 'Outfit', sans-serif !important;
+          font-weight: 700 !important;
+          font-size: 1.1rem !important;
+          color: #2d2d2d !important;
+        }
+
+        .react-datepicker__day-name {
+          color: #888 !important;
+          font-weight: 600 !important;
+        }
+
+        .react-datepicker__day {
+          border-radius: 50% !important;
+          transition: all 0.2s ease !important;
+          color: #444 !important;
+        }
+
+        .react-datepicker__day:hover {
+          background-color: #f0f0f0 !important;
+          color: #000 !important;
+        }
+
+        .react-datepicker__day--selected, 
+        .react-datepicker__day--keyboard-selected {
+          background-color: #2d2d2d !important;
+          color: #fff !important;
+          font-weight: bold !important;
+        }
+        
+        .react-datepicker__navigation-icon::before {
+          border-color: #888 !important;
+        }
+        
+        .react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+          border-color: #2d2d2d !important;
+        }
+        /* --------------------------------------- */
+
+        .read-only-date {
+          background: #f0f0f0 !important;
+          color: #888 !important;
+          border: 1px dashed #ccc !important;
+        }
+
+        .input-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+        }
+
+        .btn-group {
+          display: flex;
+          gap: 1rem;
+          margin-top: 2rem;
+        }
+
+        .btn-group.single-btn {
+          justify-content: flex-end;
+        }
+
+        .btn-group button {
+          flex: 1;
+          padding: 1.2rem;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .btn-group button:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+          transform: none !important;
+          box-shadow: none !important;
+        }
+
+        .btn-dark {
+          background: #2d2d2d;
+          color: white;
+          border: none;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-dark:hover:not(:disabled) {
+          background: #000;
+          transform: translateY(-2px);
+        }
+
+        .btn-light {
+          background: white;
+          color: #2d2d2d;
+          border: 1px solid #ddd;
+        }
+
+        .btn-light:hover:not(:disabled) {
+          background: #f8f8f8;
+        }
+
+        /* --- ADDONS & INVOICE CSS --- */
+        .addons-card {
+          border: 1px solid #eee;
+          padding: 1.5rem;
+          border-radius: 12px;
+          margin-bottom: 1.5rem;
+          background: #fff;
+        }
+
+        .addons-label {
+          display: block;
+          font-weight: 700;
+          color: #2d2d2d;
+          margin-bottom: 1.2rem;
+          font-size: 0.95rem;
+        }
+        
+        .addon-item {
+          margin-bottom: 1.2rem;
+        }
+
+        .bundle-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #fafafa;
+          padding: 1rem 1.2rem;
+          border-radius: 8px;
+          border: 1px solid #eee;
+        }
+
+        .bundle-info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .bundle-info strong {
+          color: #2d2d2d;
+          font-size: 0.95rem;
+        }
+
+        .bundle-hint {
+          color: #856404;
+          background: #fff3cd;
+          font-size: 0.75rem;
+          margin-top: 0.4rem;
+          padding: 0.2rem 0.5rem;
+          border-radius: 4px;
+          display: inline-block;
+          width: fit-content;
+          font-weight: 600;
+        }
+
+        .counter-controls {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          background: white;
+          border: 1px solid #ddd;
+          border-radius: 50px;
+          padding: 0.3rem 0.8rem;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .counter-controls button {
+          background: transparent;
+          border: none;
+          font-size: 1.2rem;
+          cursor: pointer;
+          color: #2d2d2d;
+          font-weight: bold;
+          outline: none;
+        }
+
+        .counter-controls span {
+          font-weight: 700;
+          color: #f5a623;
+          min-width: 20px;
+          text-align: center;
+          font-size: 1rem;
+        }
+
+        .addon-checkbox-label {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          cursor: pointer;
+          color: #555;
+          font-size: 1rem;
+          user-select: none;
+        }
+
+        .addon-checkbox-label input {
+          display: none;
+        }
+
+        .custom-checkbox {
+          width: 22px;
+          height: 22px;
+          border: 2px solid #ddd;
+          border-radius: 4px;
+          display: inline-block;
+          position: relative;
+          transition: all 0.2s;
+        }
+
+        .addon-checkbox-label input:checked + .custom-checkbox {
+          background: #f5a623;
+          border-color: #f5a623;
+        }
+
+        .addon-checkbox-label input:checked + .custom-checkbox::after {
+          content: '';
+          position: absolute;
+          left: 6px;
+          top: 2px;
+          width: 6px;
+          height: 11px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+
+        .invoice-summary {
+          border: 1px solid #eee;
+          padding: 1.5rem;
+          border-radius: 12px;
+          background: #fff;
+        }
+
+        .invoice-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          color: #666;
+          font-size: 0.95rem;
+        }
+
+        .item-row {
+          margin-bottom: 1.2rem;
+        }
+
+        .price-col {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+        }
+
+        .trash-icon {
+          opacity: 0.7;
+          cursor: pointer;
+          transition: opacity 0.2s;
+        }
+
+        .trash-icon:hover {
+          opacity: 1;
+        }
+
+        .invoice-divider {
+          border: 0;
+          border-top: 1px solid #eee;
+          margin: 1.2rem 0;
+        }
+
+        .discount-label {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .discount-badge {
+          background: #f0fdf4;
+          color: #16a34a;
+          padding: 0.1rem 0.4rem;
+          border-radius: 4px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          border: 1px solid #bbf7d0;
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+        }
+
+        .discount-value {
+          color: #16a34a;
+        }
+
+        .invoice-total {
+          font-weight: 800;
+          color: #f5a623;
+          font-size: 1.15rem;
+          margin-top: 1.5rem;
+          margin-bottom: 0;
+        }
+
+        .invoice-total span:last-child {
+          color: #f5a623;
+        }
+
+        .animate-fade-in {
+          animation: fadeIn 0.3s ease-out forwards;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+          .booking-card {
+            padding: 2rem 1.5rem;
+          }
+          .input-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+          }
+          .type-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+/* Booking Summary Styles */
+.checkout-container {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 2rem 0;
+          color: #2d2d2d;
+        }
+
+        .checkout-title {
+          font-size: 2rem;
+          color: #555;
+          font-weight: 300;
+          margin-bottom: 2rem;
+        }
+
+        .checkout-grid {
+          display: grid;
+          grid-template-columns: 1.8fr 1fr;
+          gap: 2.5rem;
+        }
+
+        .checkout-card {
+          background: white;
+          border-radius: 12px;
+          padding: 2rem;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+          border: 1px solid #eaeaea;
+        }
+
+        .space-title {
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: #222;
+          margin-bottom: 0.2rem;
+        }
+
+        .space-subtitle {
+          color: #888;
+          font-size: 0.9rem;
+          margin-bottom: 2rem;
+        }
+
+        .info-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        }
+
+        .info-box {
+          background: #fbfbfb;
+          border: 1px solid #eee;
+          padding: 1.2rem;
+          border-radius: 8px;
+        }
+
+        .info-box label {
+          display: block;
+          color: #888;
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-bottom: 0.4rem;
+        }
+
+        .info-box p {
+          color: #222;
+          font-weight: 600;
+          font-size: 0.95rem;
+          margin: 0;
+        }
+
+        .subscription-footer {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #eee;
+          padding-top: 1.5rem;
+        }
+
+        .subscription-footer label {
+          display: block;
+          color: #888;
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-bottom: 0.2rem;
+        }
+        
+        .subscription-footer p {
+          color: #222;
+          font-weight: 700;
+          font-size: 0.95rem;
+          margin: 0;
+        }
+
+        .additional-features {
+          margin-top: 2rem;
+        }
+
+        .additional-features h3 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #444;
+          margin-bottom: 1rem;
+        }
+
+        .feature-item {
+          background: white;
+          border: 1px solid #ddd;
+          padding: 1.2rem 1.5rem;
+          border-radius: 12px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .feature-left {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          color: #555;
+          font-weight: 500;
+        }
+
+        .feature-right {
+          color: #f5a623;
+          font-weight: 600;
+        }
+
+        .payment-card {
+          padding: 2rem;
+        }
+
+        .payment-title {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-bottom: 1.5rem;
+          color: #444;
+        }
+
+        .payment-options {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .radio-label {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          cursor: pointer;
+          color: #666;
+          font-size: 0.95rem;
+        }
+
+        .radio-label input {
+          display: none;
+        }
+
+        .radio-custom {
+          width: 18px;
+          height: 18px;
+          border: 2px solid #ddd;
+          border-radius: 50%;
+          position: relative;
+        }
+
+        .radio-label input:checked + .radio-custom {
+          border-color: #f5a623;
+        }
+
+        .radio-label input:checked + .radio-custom::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 8px;
+          height: 8px;
+          background: #f5a623;
+          border-radius: 50%;
+        }
+
+        .card-icons {
+          display: flex;
+          gap: 0.5rem;
+          margin-left: 1.8rem;
+          margin-bottom: 2rem;
+        }
+
+        .form-group {
+          margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+          display: block;
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: #555;
+          margin-bottom: 0.5rem;
+        }
+
+        .form-group input {
+          width: 100%;
+          padding: 0.9rem;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          font-size: 0.95rem;
+          color: #333;
+          background: #fbfbfb;
+        }
+
+        .form-group input:focus {
+          outline: none;
+          border-color: #2d2d2d;
+          background: white;
+        }
+
+        .input-with-button {
+          position: relative;
+          display: flex;
+          align-items: center;
+        }
+
+        .input-icon {
+          position: absolute;
+          left: 10px;
+        }
+
+        .autofill-btn {
+          position: absolute;
+          right: 5px;
+          background: #000;
+          color: white;
+          border: none;
+          padding: 0.4rem 0.8rem;
+          border-radius: 4px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        .autofill-btn span {
+          color: #10b981;
+        }
+
+        .form-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+
+        .payment-summary {
+          margin-top: 2rem;
+          border-top: 1px solid #eee;
+          padding-top: 1.5rem;
+        }
+
+        .summary-row {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 0.8rem;
+          color: #666;
+          font-size: 0.95rem;
+        }
+
+        .discount-text { color: #10b981; }
+        .discount-value { color: #10b981; font-weight: 600; }
+
+        .total-row {
+          margin-top: 1rem;
+          font-weight: 800;
+          font-size: 1.1rem;
+          color: #f5a623;
+        }
+
+        .terms-checkbox {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.8rem;
+          margin-top: 2rem;
+          cursor: pointer;
+        }
+
+        .terms-checkbox input {
+          display: none;
+        }
+
+        .checkbox-custom {
+          width: 18px;
+          height: 18px;
+          border: 2px solid #ddd;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 2px;
+          transition: all 0.2s;
+        }
+
+        .terms-checkbox input:checked + .checkbox-custom {
+          background: #f5a623;
+          border-color: #f5a623;
+        }
+
+        .terms-checkbox span {
+          font-size: 0.85rem;
+          color: #666;
+          line-height: 1.4;
+        }
+
+        .terms-checkbox a {
+          color: #888;
+          text-decoration: underline;
+        }
+
+        .btn-checkout {
+          width: 100%;
+          background: #e8e6df;
+          color: #888;
+          border: none;
+          padding: 1.2rem;
+          border-radius: 8px;
+          font-size: 1rem;
+          font-weight: 700;
+          margin-top: 1.5rem;
+          transition: all 0.3s;
+        }
+
+        .btn-checkout:not(:disabled) {
+          background: #2d2d2d;
+          color: white;
+          cursor: pointer;
+        }
+
+        .btn-checkout:not(:disabled):hover {
+          background: #000;
+        }
+
+        .animate-fade-in {
+          animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(15px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 900px) {
+          .checkout-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+/* Booking Page Layout Styles */
+.booking-page {
+          padding-top: 100px;
+          min-height: 100vh;
+          background: #fafafa;
+        }
+        .page-header {
+          margin-bottom: 4rem;
+          text-align: center;
+        }
+        .page-header h1 {
+          font-size: 3.5rem;
+          margin-bottom: 1rem;
+        }
+        .subtitle {
+          font-size: 1.2rem;
+          color: var(--text-muted);
+        }

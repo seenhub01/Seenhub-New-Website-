@@ -1,0 +1,18 @@
+# Dependency and compilation folders
+**/node_modules/
+**/.next/
+**/tmp/
+**/log/
+**/*.log
+
+# Env files
+**/.env
+**/.env.local
+**/.env.*.local
+**/.env*
+!**/.env.example
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/

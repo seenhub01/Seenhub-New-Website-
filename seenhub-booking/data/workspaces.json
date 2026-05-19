@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "title": "Meeting Room",
+    "subtitle": "Fully equipped for presentations",
+    "description": "A professional and private space designed for productive discussions, presentations, and team meetings. Fully equipped with high-speed internet, presentation screens, and video conferencing tools.",
+    "featuredImg": "/seenhub_meeting_room_1777453153762.png",
+    "gallery": [
+      "/seenhub_meeting_room_1777453153762.png",
+      "/seenhub_manager_room_1777454051312.png"
+    ],
+    "link": "/workspaces/meeting-room",
+    "maxGuests": 12,
+    "units": 3,
+    "unitNames": [
+      "Meeting room 1",
+      "Meeting room 2",
+      "meeting room 3"
+    ],
+    "bookingTypes": [
+      "Hourly",
+      "Daily",
+      "Weekly",
+      "Monthly"
+    ],
+    "pricing": {
+      "hourly": {
+        "individual": 200,
+        "corporate": 300
+      },
+      "daily": {
+        "individual": 1200,
+        "corporate": 1800
+      },
+      "weekly": {
+        "individual": 5000,
+        "corporate": 7500
+      },
+      "monthly": {
+        "individual": 15000,
+        "corporate": 22500
+      }
+    },
+    "extraGuestPrice": {
+      "individual": 50,
+      "corporate": 80
+    },
+    "workingHours": {
+      "Monday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Tuesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Wednesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Thursday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Friday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "17:00"
+      },
+      "Saturday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Sunday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      }
+    },
+    "qrPrefix": ""
+  },
+  {
+    "id": 2,
+    "title": "Manager Room",
+    "subtitle": "Private executive suite",
+    "description": "A private, fully equipped space to work, meet clients, and hold confidential discussions. Featuring high-speed internet, ergonomic furnishings, and a professional setting that ensures privacy.",
+    "featuredImg": "/seenhub_manager_room_1777454051312.png",
+    "gallery": [
+      "/seenhub_manager_room_1777454051312.png",
+      "/seenhub_meeting_room_1777453153762.png"
+    ],
+    "link": "/workspaces/manager-room",
+    "maxGuests": 4,
+    "units": 1,
+    "bookingTypes": [
+      "Hourly",
+      "Daily",
+      "Weekly",
+      "Monthly"
+    ],
+    "pricing": {
+      "hourly": {
+        "individual": 250,
+        "corporate": 375
+      },
+      "daily": {
+        "individual": 1500,
+        "corporate": 2250
+      },
+      "weekly": {
+        "individual": 6000,
+        "corporate": 9000
+      },
+      "monthly": {
+        "individual": 18000,
+        "corporate": 27000
+      }
+    },
+    "extraGuestPrice": {
+      "individual": 60,
+      "corporate": 90
+    },
+    "workingHours": {
+      "Monday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Tuesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Wednesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Thursday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Friday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "17:00"
+      },
+      "Saturday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Sunday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "VIP Business Lounge",
+    "subtitle": "Exclusive comfort for high-level meetings",
+    "description": "An exclusive, high-comfort environment for elite networking and informal high-stakes meetings. Features premium amenities and a quiet, sophisticated atmosphere.",
+    "featuredImg": "/seenhub_vip_lounge_1777453307436.png",
+    "gallery": [
+      "/seenhub_vip_lounge_1777453307436.png"
+    ],
+    "link": "/workspaces/vip-business-lounge",
+    "maxGuests": 20,
+    "units": 1,
+    "bookingTypes": [
+      "Hourly",
+      "Daily"
+    ],
+    "pricing": {
+      "hourly": {
+        "individual": 300,
+        "corporate": 450
+      },
+      "daily": {
+        "individual": 1800,
+        "corporate": 2700
+      },
+      "weekly": {
+        "individual": 0,
+        "corporate": 0
+      },
+      "monthly": {
+        "individual": 0,
+        "corporate": 0
+      }
+    },
+    "extraGuestPrice": {
+      "individual": 80,
+      "corporate": 120
+    },
+    "workingHours": {
+      "Monday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Tuesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Wednesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Thursday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Friday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "17:00"
+      },
+      "Saturday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Sunday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Work Booth (Double)",
+    "subtitle": "Acoustic privacy for two",
+    "description": "A private, soundproof space designed for focused teamwork, negotiations, and interviews. High-speed internet, ergonomic seating, professional lighting for video calls.",
+    "featuredImg": "/seenhub_meeting_room_1777453153762.png",
+    "gallery": [
+      "/seenhub_meeting_room_1777453153762.png"
+    ],
+    "link": "/workspaces/work-booth-double",
+    "maxGuests": 2,
+    "units": 2,
+    "unitNames": [
+      "Work Booth Double (A)",
+      "Workbooth Double (D)"
+    ],
+    "bookingTypes": [
+      "Hourly",
+      "Daily"
+    ],
+    "pricing": {
+      "hourly": {
+        "individual": 80,
+        "corporate": 120
+      },
+      "daily": {
+        "individual": 480,
+        "corporate": 720
+      },
+      "weekly": {
+        "individual": 0,
+        "corporate": 0
+      },
+      "monthly": {
+        "individual": 0,
+        "corporate": 0
+      }
+    },
+    "extraGuestPrice": {
+      "individual": 0,
+      "corporate": 0
+    },
+    "workingHours": {
+      "Monday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Tuesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Wednesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Thursday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Friday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "17:00"
+      },
+      "Saturday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Sunday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Work Booth (Single)",
+    "subtitle": "Private acoustic pod for deep focus",
+    "description": "A quiet, private space designed for deep focus and uninterrupted work. Sound-controlled for maximum concentration, equipped with professional lighting.",
+    "featuredImg": "/seenhub_vip_lounge_1777453307436.png",
+    "gallery": [
+      "/seenhub_vip_lounge_1777453307436.png"
+    ],
+    "link": "/workspaces/work-booth-single",
+    "maxGuests": 1,
+    "units": 3,
+    "unitNames": [
+      "Work Booth Single (B)",
+      "Workbooth Single (C)",
+      "Workbooth Single (E)"
+    ],
+    "bookingTypes": [
+      "Hourly",
+      "Daily"
+    ],
+    "pricing": {
+      "hourly": {
+        "individual": 50,
+        "corporate": 75
+      },
+      "daily": {
+        "individual": 300,
+        "corporate": 450
+      },
+      "weekly": {
+        "individual": 0,
+        "corporate": 0
+      },
+      "monthly": {
+        "individual": 0,
+        "corporate": 0
+      }
+    },
+    "extraGuestPrice": {
+      "individual": 0,
+      "corporate": 0
+    },
+    "workingHours": {
+      "Monday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Tuesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Wednesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Thursday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Friday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "17:00"
+      },
+      "Saturday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Sunday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "ClassRoom",
+    "subtitle": "Space for workshops and training",
+    "description": "A fully equipped learning space featuring comfortable seating and advanced presentation tools, designed to support training sessions, workshops, professional courses.",
+    "featuredImg": "/seenhub_modern_workspace_1777453051246.png",
+    "gallery": [
+      "/seenhub_modern_workspace_1777453051246.png",
+      "/seenhub_meeting_room_1777453153762.png"
+    ],
+    "link": "/workspaces/classroom",
+    "maxGuests": 30,
+    "units": 1,
+    "bookingTypes": [
+      "Hourly",
+      "Daily",
+      "Weekly",
+      "Monthly"
+    ],
+    "pricing": {
+      "hourly": {
+        "individual": 150,
+        "corporate": 225
+      },
+      "daily": {
+        "individual": 900,
+        "corporate": 1350
+      },
+      "weekly": {
+        "individual": 3800,
+        "corporate": 5700
+      },
+      "monthly": {
+        "individual": 12000,
+        "corporate": 18000
+      }
+    },
+    "extraGuestPrice": {
+      "individual": 30,
+      "corporate": 50
+    },
+    "workingHours": {
+      "Monday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Tuesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Wednesday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Thursday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Friday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "17:00"
+      },
+      "Saturday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      },
+      "Sunday": {
+        "enabled": true,
+        "from": "08:00",
+        "to": "22:00"
+      }
+    }
+  }
+]

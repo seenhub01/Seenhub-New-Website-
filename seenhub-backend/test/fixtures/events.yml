@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  location: MyString
+  start_date: 2026-05-16
+  end_date: 2026-05-16
+  start_time: MyString
+  end_time: MyString
+  gate_number: MyString
+  event_type: MyString
+  description: MyText
+  status: MyString
+  total_tickets: 1
+  price: 9.99
+
+two:
+  title: MyString
+  location: MyString
+  start_date: 2026-05-16
+  end_date: 2026-05-16
+  start_time: MyString
+  end_time: MyString
+  gate_number: MyString
+  event_type: MyString
+  description: MyText
+  status: MyString
+  total_tickets: 1
+  price: 9.99

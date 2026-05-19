@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1777724425890,
+    "email": "testing@gmail.com",
+    "name": "ibrar",
+    "phone": "0556721324",
+    "joiningDate": "5/2/2026",
+    "status": "Active"
+  },
+  {
+    "id": 1777875801123,
+    "email": "testing@gmail.com",
+    "name": "Ibrar",
+    "phone": "05672811265",
+    "joiningDate": "5/4/2026",
+    "status": "Active"
+  }
+]

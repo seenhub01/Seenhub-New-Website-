@@ -1,0 +1,2 @@
+class EmailBroadcast < ApplicationRecord
+end

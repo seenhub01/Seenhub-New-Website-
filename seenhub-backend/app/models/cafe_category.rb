@@ -1,0 +1,2 @@
+class CafeCategory < ApplicationRecord
+end

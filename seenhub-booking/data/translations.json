@@ -1,0 +1,28 @@
+{
+  "en": {
+    "nav_home": "Home",
+    "nav_about": "About Us",
+    "nav_workspaces": "Workspaces",
+    "nav_memberships": "Passes & Memberships",
+    "nav_partner": "Our Sustainable Partner",
+    "nav_events": "Events",
+    "nav_blog": "Blog",
+    "nav_contact": "Contact Us",
+    "btn_book": "Book Now",
+    "hero_title": "SEEN Business Hub",
+    "hero_subtitle": "Al Ain first AI-powered business hub"
+  },
+  "ar": {
+    "nav_home": "الرئيسية",
+    "nav_about": "من نحن",
+    "nav_workspaces": "مساحات العمل",
+    "nav_memberships": "العضويات والتصاريح",
+    "nav_partner": "شريكنا المستدام",
+    "nav_events": "الفعاليات",
+    "nav_blog": "المدونة",
+    "nav_contact": "اتصل بنا",
+    "btn_book": "احجز الآن",
+    "hero_title": "سين بيزنس هب",
+    "hero_subtitle": "أول مركز أعمال مدعوم بالذكاء الاصطناعي في العين"
+  }
+}

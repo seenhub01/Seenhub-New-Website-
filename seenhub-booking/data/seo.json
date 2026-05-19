@@ -1,0 +1,146 @@
+[
+  {
+    "id": "home",
+    "page": "Home",
+    "route": "/",
+    "title": "SeenHub | Premium Business Hub in Al Ain",
+    "description": "Experience the first AI-powered business hub in Al Ain. Premium workspaces, meeting rooms, and networking events.",
+    "category": "Main Pages"
+  },
+  {
+    "id": "booking",
+    "page": "Booking",
+    "route": "/workspaces",
+    "title": "Book Your Workspace | SeenHub Business Suite",
+    "description": "Reserve premium meeting rooms, private offices, and coworking spaces online.",
+    "category": "Main Pages"
+  },
+  {
+    "id": "memberships",
+    "page": "Memberships",
+    "route": "/memberships",
+    "title": "Membership Plans | SeenHub Business Suite",
+    "description": "Flexible membership plans designed for entrepreneurs and businesses of all sizes.",
+    "category": "Main Pages"
+  },
+  {
+    "id": "events",
+    "page": "Events",
+    "route": "/events",
+    "title": "Business Events & Workshops | SeenHub",
+    "description": "Join industry-leading workshops and networking events at SeenHub Business Hub.",
+    "category": "Main Pages"
+  },
+  {
+    "id": "blogs",
+    "page": "Blogs",
+    "route": "/blogs",
+    "title": "Insights & News | SeenHub Blog",
+    "description": "Read the latest trends in business, AI, and entrepreneurship from SeenHub experts.",
+    "category": "Main Pages"
+  },
+  {
+    "id": "contact",
+    "page": "Contact",
+    "route": "/contact",
+    "title": "Contact Us | SeenHub Business Suite",
+    "description": "Get in touch with our team for inquiries, bookings, or support.",
+    "category": "Main Pages"
+  },
+  {
+    "id": "ws-1",
+    "category": "Workspaces",
+    "page": "Meeting Room",
+    "route": "/workspaces/1",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "ws-2",
+    "category": "Workspaces",
+    "page": "Manager Room",
+    "route": "/workspaces/2",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "ws-3",
+    "category": "Workspaces",
+    "page": "VIP Business Lounge",
+    "route": "/workspaces/3",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "ws-4",
+    "category": "Workspaces",
+    "page": "Work Booth (Double)",
+    "route": "/workspaces/4",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "ws-5",
+    "category": "Workspaces",
+    "page": "Work Booth (Single)",
+    "route": "/workspaces/5",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "ws-6",
+    "category": "Workspaces",
+    "page": "ClassRoom",
+    "route": "/workspaces/6",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "mem-1",
+    "category": "Memberships",
+    "page": "Day Pass-Coworking Space",
+    "route": "/memberships/1",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "mem-2",
+    "category": "Memberships",
+    "page": "Monthly Membership",
+    "route": "/memberships/2",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "mem-3",
+    "category": "Memberships",
+    "page": "Student Membership",
+    "route": "/memberships/3",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "mem-4",
+    "category": "Memberships",
+    "page": "VIP Daily Pass",
+    "route": "/memberships/4",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "evt-1778590744269",
+    "category": "Events",
+    "page": "Business In Al Ain",
+    "route": "/events/1778590744269",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "blog-1777700816048",
+    "category": "Blogs",
+    "page": "Best workbooth",
+    "route": "/blogs/1777700816048",
+    "title": "",
+    "description": ""
+  }
+]

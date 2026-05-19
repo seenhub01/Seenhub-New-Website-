@@ -1,0 +1,291 @@
+
+> seenhub-booking@0.1.0 lint
+> eslint
+
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\about\page.js
+  100:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\blogs\[id]\page.js
+  45:77  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  45:98  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  46:11  error    Do not use an `<a>` element to navigate to `/blogs/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                              @next/next/no-html-link-for-pages
+  62:11  error    Do not use an `<a>` element to navigate to `/blogs/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                              @next/next/no-html-link-for-pages
+  97:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\blogs\page.js
+  72:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\booking\page.js
+  14:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  12 |       const pendingRenewal = localStorage.getItem('seenhub_pending_renewal');
+  13 |       if (pendingRenewal) {
+> 14 |         setBooking(JSON.parse(pendingRenewal));
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  15 |         localStorage.removeItem('seenhub_pending_renewal');
+  16 |       }
+  17 |     }  react-hooks/set-state-in-effect
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\checkout\page.js
+   51:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  49 |       const stored = JSON.parse(localStorage.getItem('seenhub_events') || '[]');
+  50 |       const ev = stored.find(e => e.title === service);
+> 51 |       setEvent(ev);
+     |       ^^^^^^^^ Avoid calling setState() directly within an effect
+  52 |     } else if (category === 'workspaces') {
+  53 |       const stored = JSON.parse(localStorage.getItem('seenhub_workspaces') || '[]');
+  54 |       const ws = stored.find(w => w.title === service);  react-hooks/set-state-in-effect
+  114:31  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  112 |   const handlePay = async (e) => {
+  113 |     e.preventDefault();
+> 114 |     const bookingId = 'SH-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+      |                               ^^^^^^^^^^^^^ Cannot call impure function
+  115 |     
+  116 |     const payload = {
+  117 |       id: bookingId,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            react-hooks/purity
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\contact\page.js
+  34:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  32 |     const landing = JSON.parse(localStorage.getItem('seenhub_landing_page'));
+  33 |     if (landing) {
+> 34 |       setInfo({
+     |       ^^^^^^^ Avoid calling setState() directly within an effect
+  35 |         contactEmail: landing.contactEmail || info.contactEmail,
+  36 |         contactPhone: landing.contactPhone || info.contactPhone,
+  37 |         contactAddress: landing.contactAddress || info.contactAddress  react-hooks/set-state-in-effect
+  40:6   warning  React Hook React.useEffect has missing dependencies: 'info.contactAddress', 'info.contactEmail', and 'info.contactPhone'. Either include them or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setInfo' needs the current value of 'info.contactEmail'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/exhaustive-deps
+  89:13  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @next/next/no-html-link-for-pages
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\events\page.js
+  141:51  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\faqs\page.js
+  99:67  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\layout.js
+   20:9   error    Error: Cannot access variable before it is declared
+
+`setSettings` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  18 |       .then(res => res.json())
+  19 |       .then(data => {
+> 20 |         setSettings(data);
+     |         ^^^^^^^^^^^ `setSettings` accessed before it is declared
+  21 |         if (data.logo) {
+  22 |           setLogo(data.logo);
+  23 |           let link = document.querySelector("link[rel~='icon']");
+
+  33 |   }, []);
+  34 |
+> 35 |   const [settings, setSettings] = useState({
+     |                    ^^^^^^^^^^^ `setSettings` is declared here
+  36 |     openingHours: [
+  37 |       { days: 'Monday To Friday', time: '8 AM To 10 PM' },
+  38 |       { days: 'Saturday To Sunday', time: '10 AM To 6 PM' }  react-hooks/immutability
+   75:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @next/next/no-img-element
+   80:28  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react/no-unescaped-entities
+  115:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\memberships\[id]\page.js
+  68:11  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                    @next/next/no-html-link-for-pages
+  68:47  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                    @next/next/no-html-link-for-pages
+  85:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\page.js
+  114:15  error  Do not use an `<a>` element to navigate to `/memberships/day-pass/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages            @next/next/no-html-link-for-pages
+  120:15  error  Do not use an `<a>` element to navigate to `/memberships/monthly-membership/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+  126:15  error  Do not use an `<a>` element to navigate to `/memberships/student-membership/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+  132:15  error  Do not use an `<a>` element to navigate to `/memberships/vip-daily-pass/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages      @next/next/no-html-link-for-pages
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\verify-email\page.js
+  15:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  13 |
+  14 |     if (!token) {
+> 15 |       setStatus('error');
+     |       ^^^^^^^^^ Avoid calling setState() directly within an effect
+  16 |       setMessage('Verification token missing. Please check your email link.');
+  17 |       return;
+  18 |     }  react-hooks/set-state-in-effect
+  50:11  error  Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @next/next/no-html-link-for-pages
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\workspaces\[id]\page.js
+  59:11  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                    @next/next/no-html-link-for-pages
+  72:11  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                    @next/next/no-html-link-for-pages
+  72:47  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                    @next/next/no-html-link-for-pages
+  90:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\app\workspaces\page.js
+  185:28  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  204:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\components\AuthModal.js
+  62:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  60 |   // Clear errors and form data when switching tabs
+  61 |   useEffect(() => {
+> 62 |     setGeneralError('');
+     |     ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  63 |     setFieldErrors({});
+  64 |
+  65 |     // Clear form data based on tab  react-hooks/set-state-in-effect
+  95:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  93 |   useEffect(() => {
+  94 |     if (isOpen) {
+> 95 |       setGeneralError('');
+     |       ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  96 |       setFieldErrors({});
+  97 |       setActiveTab('login');
+  98 |     }                               react-hooks/set-state-in-effect
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\components\BookingForm.js
+   42:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  40 |
+  41 |     const storedEvents = JSON.parse(localStorage.getItem('seenhub_events') || '[]');
+> 42 |     setEventsData(storedEvents);
+     |     ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  43 |
+  44 |     if (typeof window !== 'undefined') {
+  45 |       const params = new URLSearchParams(window.location.search);  react-hooks/set-state-in-effect
+   50:9  error  Error: Cannot access variable before it is declared
+
+`setFormData` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  48 |
+  49 |       if (service) {
+> 50 |         setFormData(prev => ({ ...prev, space: service }));
+     |         ^^^^^^^^^^^ `setFormData` accessed before it is declared
+  51 |       }
+  52 |       
+  53 |       const guests = params.get('guests');
+
+  108 |   }, []);
+  109 |
+> 110 |   const [formData, setFormData] = useState({
+      |                    ^^^^^^^^^^^ `setFormData` is declared here
+  111 |     name: '',
+  112 |     email: '',
+  113 |     phone: '',                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/immutability
+  215:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  213 |   useEffect(() => {
+  214 |     if ((category === 'workspaces' || category === 'memberships') && (!formData.space || !formData.date)) {
+> 215 |       setAvailability(null);
+      |       ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  216 |       setOccupiedSlots([]);
+  217 |       return;
+  218 |     }           react-hooks/set-state-in-effect
+  447:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  445 |       priceType: (user?.role === 'Corporate' || user?.isCorporate) ? 'Corporate' : 'Individual'
+  446 |     });
+> 447 |     window.location.href = `/checkout?${params.toString()}`;
+      |     ^^^^^^^^^^^^^^^ value cannot be modified
+  448 |   };
+  449 |
+  450 |   const isStep1Valid = formData.space !== '';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/immutability
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\components\BookingSummary.js
+  149:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  150:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\components\Navbar.js
+  61:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  59 |     const params = new URLSearchParams(window.location.search);
+  60 |     if (params.get('login') === 'true') {
+> 61 |       setIsAuthOpen(true);
+     |       ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  62 |     }
+  63 |
+  64 |     window.addEventListener('scroll', handleScroll);  react-hooks/set-state-in-effect
+  88:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @next/next/no-img-element
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\components\OTPModal.js
+   16:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  14 |   useEffect(() => {
+  15 |     if (timeLeft <= 0) {
+> 16 |       setCanResend(true);
+     |       ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  17 |       return;
+  18 |     }
+  19 |  react-hooks/set-state-in-effect
+   97:16  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react/no-unescaped-entities
+  144:53  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react/no-unescaped-entities
+
+C:\Users\seend\.gemini\antigravity\scratch\seenhub-booking\src\components\RichTextEditor.js
+  88:88  warning  Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+??? 48 problems (35 errors, 13 warnings)
+

@@ -1,0 +1,45 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  qr_prefix: MyString
+  qr_total_length: 1
+  tax_enabled: false
+  tax_percentage: 9.99
+  print_credit_to_page_ratio: 9.99
+  print_min_top_up: 9.99
+  print_aed_to_credit_ratio: 9.99
+  currency: MyString
+  printer_ip: MyString
+  logo: MyText
+  contact_whats_app: MyString
+  contact_phone: MyString
+  contact_email: MyString
+  opening_hours: 
+  social_links: 
+  website_url: MyString
+  workspace_prefixes: 
+  unit_prefixes: 
+  membership_prefix: MyString
+  event_prefix: MyString
+
+two:
+  qr_prefix: MyString
+  qr_total_length: 1
+  tax_enabled: false
+  tax_percentage: 9.99
+  print_credit_to_page_ratio: 9.99
+  print_min_top_up: 9.99
+  print_aed_to_credit_ratio: 9.99
+  currency: MyString
+  printer_ip: MyString
+  logo: MyText
+  contact_whats_app: MyString
+  contact_phone: MyString
+  contact_email: MyString
+  opening_hours: 
+  social_links: 
+  website_url: MyString
+  workspace_prefixes: 
+  unit_prefixes: 
+  membership_prefix: MyString
+  event_prefix: MyString

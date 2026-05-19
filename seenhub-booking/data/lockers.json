@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1778735728457,
+    "code": "LK-01",
+    "name": "Locker 1",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:15 AM",
+    "updatedAt": "2026-05-14T05:16:41.929Z"
+  },
+  {
+    "id": 1778735741220,
+    "code": "LK-02",
+    "name": "Locker 2",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:15 AM",
+    "updatedAt": "2026-05-14T05:16:12.306Z"
+  },
+  {
+    "id": 1778735753571,
+    "code": "LK-03",
+    "name": "Locker 3",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:15 AM"
+  },
+  {
+    "id": 1778735789550,
+    "code": "LK-04",
+    "name": "Locker 4",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:16 AM"
+  },
+  {
+    "id": 1778735816463,
+    "code": "LK-05",
+    "name": "Locker 5",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:16 AM"
+  },
+  {
+    "id": 1778735825982,
+    "code": "LK-06",
+    "name": "Locker 6",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:17 AM"
+  },
+  {
+    "id": 1778735836480,
+    "code": "LK-07",
+    "name": "Locker 7",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:17 AM"
+  },
+  {
+    "id": 1778735844888,
+    "code": "LK-08",
+    "name": "Locker 8",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:17 AM"
+  },
+  {
+    "id": 1778735855018,
+    "code": "LK-09",
+    "name": "Locker 9",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:17 AM"
+  },
+  {
+    "id": 1778735872901,
+    "code": "LK-10",
+    "name": "Locker 10",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:17 AM"
+  },
+  {
+    "id": 1778735879509,
+    "code": "LK-11",
+    "name": "Locker 11",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:17 AM"
+  },
+  {
+    "id": 1778735886434,
+    "code": "LK-12",
+    "name": "Locker 12",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:18 AM"
+  },
+  {
+    "id": 1778735895977,
+    "code": "LK-13",
+    "name": "Locker 13",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:18 AM"
+  },
+  {
+    "id": 1778735910044,
+    "code": "LK-14",
+    "name": "Locker 14",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:18 AM"
+  },
+  {
+    "id": 1778736006660,
+    "code": "LK-15",
+    "name": "Locker 15",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:20 AM"
+  },
+  {
+    "id": 1778736020604,
+    "code": "LK-16",
+    "name": "Locker 16",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:20 AM"
+  },
+  {
+    "id": 1778736035693,
+    "code": "LK-17",
+    "name": "Locker 17",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:20 AM"
+  },
+  {
+    "id": 1778736057975,
+    "code": "LK-18",
+    "name": "Locker 18",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:20 AM"
+  },
+  {
+    "id": 1778736081902,
+    "code": "LK-19",
+    "name": "Locker 19",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:21 AM"
+  },
+  {
+    "id": 1778736096343,
+    "code": "LK-20",
+    "name": "Locker 20",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:21 AM"
+  },
+  {
+    "id": 1778736104504,
+    "code": "LK-21",
+    "name": "Locker 21",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:21 AM"
+  },
+  {
+    "id": 1778736112234,
+    "code": "LK-21",
+    "name": "Locker 21",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:21 AM"
+  },
+  {
+    "id": 1778736121281,
+    "code": "LK-22",
+    "name": "Locker 22",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:22 AM"
+  },
+  {
+    "id": 1778736127793,
+    "code": "LK-23",
+    "name": "Locker 23",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:22 AM"
+  },
+  {
+    "id": 1778736134825,
+    "code": "LK-24",
+    "name": "Locker 24",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:22 AM"
+  },
+  {
+    "id": 1778736147353,
+    "code": "LK-25",
+    "name": "Locker 25",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:22 AM"
+  },
+  {
+    "id": 1778736166162,
+    "code": "LK-26",
+    "name": "Locker 26",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:22 AM"
+  },
+  {
+    "id": 1778736173455,
+    "code": "LK-27",
+    "name": "Locker 27",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:22 AM"
+  },
+  {
+    "id": 1778736180704,
+    "code": "LK-28",
+    "name": "Locker 28",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:23 AM"
+  },
+  {
+    "id": 1778736188673,
+    "code": "LK-29",
+    "name": "Locker 29",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:23 AM"
+  },
+  {
+    "id": 1778736200472,
+    "code": "LK-30",
+    "name": "Locker 30",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:23 AM"
+  },
+  {
+    "id": 1778736210419,
+    "code": "LK-31",
+    "name": "Locker 31",
+    "status": "AVAILABLE",
+    "price": 10,
+    "createdAt": "May 14, 2026 at 09:23 AM"
+  }
+]
